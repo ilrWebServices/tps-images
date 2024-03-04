@@ -26,7 +26,7 @@
         let imageExtensions = new RegExp("\.jpg$|\.jpeg$|\.gif$|\.png$");
         for (let file of data) {
           if ( file.path.match(imageExtensions) !== null ) {
-            htmlString += `<li><a href="${file.path}"><img src="${file.path}"></a></li>`;
+            htmlString += `<li><a href="${file.path}" target="_blank"><img src="${file.path}"></a></li>`;
           }
         }
 
